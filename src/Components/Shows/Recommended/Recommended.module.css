@@ -1,0 +1,131 @@
+.showsRecommended {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -160px;
+}
+.shows {
+  width: 98%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.topShow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.topShow .topLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  gap: 20px;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  line-height: 2px;
+}
+
+.topRight {
+  margin-right: 10px;
+}
+.topRight a {
+  color: white;
+}
+
+.showsRecommended .showData {
+  margin: auto;
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-x: auto;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+.showData {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit based browsers */
+.showData::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.showData {
+  -ms-overflow-style: none;
+}
+
+.showData::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 auto;
+  height: 320px;
+  width: 280px;
+  text-align: center;
+  border-radius: 8px;
+  margin: 8px;
+  cursor: pointer;
+  position: relative;
+}
+
+.card img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: auto;
+  border-radius: 8px;
+}
+
+.card .imgInfo {
+  position: absolute;
+  bottom: 5px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+
+.imgInfo .location > p {
+  margin-top: 0px;
+  margin-bottom: 4px;
+  font-size: 0.7rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.location span {
+  font-size: 0.7rem;
+  color: #989090;
+}
+
+.date p {
+  font-size: 0.6rem;
+  margin-top: 0px;
+  margin-bottom: 4px;
+  color: #989090;
+}
+.date span {
+  font-size: 0.6rem;
+  color: #989090;
+}
+
+@media screen and (max-width: 490px) {
+  .showsRecommended {
+    margin-top: -200px;
+  }
+
+  .showData {
+    margin-top: -1px;
+  }
+}

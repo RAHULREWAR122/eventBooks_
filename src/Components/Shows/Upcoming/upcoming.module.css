@@ -1,0 +1,120 @@
+.upcoming {
+  height: auto;
+  padding: 6px;
+}
+
+.upcomingShows {
+  width: 97%;
+  margin: auto;
+}
+
+.upcomingShows h3 {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.cards {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for WebKit based browsers */
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE and Edge */
+.cards {
+  -ms-overflow-style: none;
+}
+
+.cards::-webkit-scrollbar {
+  display: none;
+}
+
+.cards {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 85vh;
+  overflow: scroll;
+}
+.cards .card {
+  height: 340px;
+  width: 260px;
+  border: 1px solid #989090;
+  margin: 5px;
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+}
+.card .image {
+  border-radius: 8px;
+  overflow: hidden;
+  height: 80%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card .image img {
+  background-repeat: no-repeat;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  border-radius: 8px;
+}
+.card .image p {
+  background-color: #08070749;
+  color: #fff;
+  padding: 9px;
+  position: absolute;
+  bottom: -16px;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.about {
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about h5 {
+  color: #161515ad;
+}
+
+.information {
+  padding: 5px;
+  margin-top: -25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information p {
+  margin-top: 1px;
+  font-size: 0.8rem;
+  color: #989090;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loc {
+  font-size: 1.2rem;
+  color: #989090;
+}
+
+@media screen and (max-width: 650px) {
+  .cards .card {
+    height: 17rem;
+    width: 210px;
+  }
+}
+@media screen and (max-width: 545px) {
+  .cards .card {
+    width: 93%;
+  }
+}
